@@ -1,4 +1,7 @@
 import './App.css'
+import heroArt from './herosvg.svg'
+import servicesArt from './envolopeitems.svg'
+import contactArt from './contactus.svg'
 
 const BUSINESS_NAME = 'Art Reklam'
 const CONTACT = {
@@ -105,7 +108,7 @@ function App() {
             </h1>
             <div className="hero-art-inline" aria-hidden="true">
               <div className="art-blob" />
-              <img src="/herosvg.svg" alt="Design and print illustration" />
+              <img src={heroArt} alt="Design and print illustration" />
             </div>
             <ul className="hero-checklist">
               {HERO_POINTS.map((point) => (
@@ -136,7 +139,7 @@ function App() {
           </div>
           <div className="hero-art" aria-hidden="true">
             <div className="art-blob" />
-            <img src="/herosvg.svg" alt="Design and print illustration" />
+            <img src={heroArt} alt="Design and print illustration" />
             <ul className="hero-checklist">
               {HERO_POINTS.map((point) => (
                 <li key={point}>
@@ -157,7 +160,7 @@ function App() {
           <div className="services-layout">
             <div className="services-art" aria-hidden="true">
               <div className="art-blob soft" />
-              <img src="/envolopeitems.svg" alt="Print samples illustration" />
+              <img src={servicesArt} alt="Print samples illustration" />
             </div>
             <div>
               <div className="section-header">
@@ -203,7 +206,7 @@ function App() {
           </div>
           <div className="contact-art" aria-hidden="true">
             <div className="art-blob soft" />
-            <img src="/contactus.svg" alt="Contact illustration" />
+            <img src={contactArt} alt="Contact illustration" />
           </div>
         </section>
       </main>
